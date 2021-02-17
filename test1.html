@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Test</h2>
+
+<p id="test"></p>
+<style>
+  span{
+    border: solid 1px black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30%;
+  }
+  .anillo1{
+    margin-right: -5px;
+  }
+  .anillo3{
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  .anillo5{
+    margin-left: -5px;
+  }
+
+</style>
+
+<script>
+  window.onload = function()
+{
+    var text = "";
+    var anillos = [1,2,3,4,5];
+
+    for (var i = 0; i < anillos.length; i++) {
+      text += "<span class='anillo"+anillos[i]+"'>" +anillos[i] +'</span>';
+      
+    }
+    //console.log('anillos.length', anillos.length);
+    document.getElementById("test").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+  
